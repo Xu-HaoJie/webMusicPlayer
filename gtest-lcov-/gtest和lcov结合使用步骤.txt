@@ -1,0 +1,24 @@
+(1)mygtest_new里面有三个文件夹，include和src是gtest的源程序，mytest是我
+	
+们测试用的目录，可以将mytest放到你自己喜欢的地方
+
+(2)进入mytest目录，打开Makefile文件，将第一行GTEST_DIR =    
+/home/fanchenxin/tools/mygtest_new/
+	这个目录替换成mygtest_new存放的目录，当然"mygtest_new"也可以改为自己喜欢的名字。
+
+(3)当安装好lcov工具后，到mytest文件夹下修改我写的run.sh脚本文件
+
+（4）将 “../lcov-1.11/bin/lcov”前面的".."替换成lcov解压安装的路径
+
+（5）run.sh脚本的最后一行是：“firefox ./Lcov_out/index.html”
+    因为我用的是火狐浏览器，firefox要替换成自己的浏览器。
+
+（6）待测试接口和测试用例都在mytest/test_code目录下,有3个测试的实例，
+        每个测试用例下面都有.c .h和test_case.c文件，其中test_case.c是写
+        测试用例的，另外是你要测试的接口函数和头文件。
+关于测试用例的写法参考博客：http://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
+
+（7）编写完测试用例以后，只要运行 ./run.sh 后面跟上你待测代码的路径就OK了，
+	例如：./run.sh ./test_code/ALSA_test/
+运行成功会弹出lcov生成的网页版的路径覆盖信息。这个网页信息在Lcov_out目录下的index.html，
+我们也可以自己打开这个html查看。

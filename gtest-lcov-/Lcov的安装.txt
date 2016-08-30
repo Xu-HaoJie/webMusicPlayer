@@ -1,0 +1,15 @@
+(1)首先解压：
+	tar xvzf lcov-1.11.tar.gz -C 后面跟解压到哪个目录
+（2）cd 切换到解压的目录（假如解压到/home/tools目录下）
+	cd /home/tools/lcov-1.11
+(3)修改文件：lcov-1.11/bin/genifo
+	vim lcov-1.11/bin/genifo
+然后将第65行的：our $gcov_tool = "gcov" 改为自己的交叉编译器的gcov
+
+比如我的交叉编译工具是/usr/local/arm/4.3.2/bin/arm-linux-gcc
+那么就改为：our $gcov_tool = "/usr/local/arm/4.3.2/bin/arm-linux-gcov"
+
+可以使用：find / -name *gcov来查找下自己的交叉编译工具在什么目录下
+(4) 最后 make install 就好了
+
+ 注:第三步可以不做   

@@ -1,0 +1,14 @@
+#! /bin/bash
+
+make
+./run_test
+
+#../lcov-1.11/bin/lcov -d . -t 'run_test' -o 'run_test.info' -b . -c
+../lcov-1.11/bin/lcov --capture --directory . --output-file run_test.info --test-name  run_test
+
+#../lcov-1.11/bin/genhtml -o . run_test.info
+../lcov-1.11/bin/genhtml run_test.info  --output-directory Lcov_out --title "run_test" --show-details --legend
+
+chmod -R 777 ../mygtest/
+
+firefox ./Lcov_out/index.html
