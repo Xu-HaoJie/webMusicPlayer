@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTC XHTML 1.1//EN"
+"http//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Resume</title>
+	<script type="text/javascript" src="javascripts/commonApi.js"></script>
+	<script type="text/javascript" src="javascripts/logoSwing.js"></script>
+	<script type="text/javascript" src="javascripts/movePic.js"></script>
+	<script type="text/javascript" src="javascripts/playMusic.js"></script>
+	<script type="text/javascript" src="javascripts/highlightPage.js"></script>
+	<link rel="stylesheet" href="styles/basic.css" type="text/css" media="screen" /> 
+</head>
+<body id="homePage">
+	<div id="header">
+		<img id="title" src="images/logo.jpg" alt="logo" />
+	</div>
+	
+	<div id="navigation">
+		<ul id="tagList">
+			<li> <a href="briefIntroduction.html">Brief Introduction</a> </li>
+			<li> <a href="BaseInfo.html">Base Information</a> </li>
+			<li> <a href="ProjectExp.html">Projects' Experience</a> </li>
+			<li> <a href="Hobbies.html">Hobbies</a> </li>
+			<li> <a href="EducationExp.html">Education Experience</a> </li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<h2>Welcome</h2>
+		<p> Welcome to my home page, have a good day ^ ^ !
+		</p>
+		
+		<div id="slideShow">
+			<img id="slideImage" src="images/fivePics.jpg" alt="slideImage" />
+		</div>
+
+		<div id="audioBar_div">
+			<!-- <img id="processBar_background" src="images/Audio/processBar_background.png"
+			alt="process bar background image" />
+			
+			<img id="processBar" src="images/Audio/processBar.png"
+			alt="process bar image" />
+			
+			<br></br> -->
+			<p id="songName" style="text-align:center; font-weight: bold; color:#f00">歌曲名: jiehun.wav</p>
+			<canvas id="audioBar" width="560" height="20">drawing</canvas>
+			<div id="songScaleBut" style="position:absolute;cursor:pointer">  <!-- cursor:pointer 鼠标放上去变成手型  -->
+					<img id="songScaleButImg" src="images/Audio/songScaleBut.png" alt="song sacle button" />
+	    </div>
+		</div>
+
+		<div id="song_button">
+			<img id="previous_button" class="musicBut" src="images/Audio/previous.png" 
+			alt="click it play the previous song" />
+			<img id="play_button" src="images/Audio/pause.png" class="musicBut" 
+			alt="click it play or pause playing the song" />
+			<!-- <img id="play_button" src="images/Audio/pause.png" alt="click it pause or continue the playing" /> -->
+			<img id="next_button" src="images/Audio/next.png" class="musicBut" alt="click it play the next song" />
+			<!-- <img id="stop_button" src="images/Audio/stop.png" class="musicBut" alt="click it stop the playing song" /> -->
+			<form action="#">
+				<input id="loopPlay" type="checkbox" name="loopPlay" value="单曲循环">单曲循环
+				<img id="voiceLogo" src="images/Audio/voiceLogo.png" style="margin-left:20px" alt="voice logo" />
+				<canvas id="voiceScaleBar" style="margin-bottom:4px" width="100" height="4">voice scale bar</canvas>
+				<div id="voiceScaleBut" style="position:absolute;cursor:pointer">
+					<img id="voiceScaleButImg" src="images/Audio/voiceScaleBut.png" alt="voice sacle button" />
+	      </div>
+	      <span id="voiceLeverValue" style="position:absolute; margin-bottom:8px">50%</span>
+	      <span style="margin-left:80px">作者：范陈新</span>
+			</form> 
+		</div>
+	</div>
+	
+
+	<!-- <audio id="AudioPlayer" controls> -->
+	<audio id="AudioPlayer">
+		<source id="song" src="musics/jiehun.wav" type="audio/wav">
+	</audio>
+
+	<p id="debug"></p>
+</body>
+</html>

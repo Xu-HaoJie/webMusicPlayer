@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTC XHTML 1.1//EN"
+"http//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Resume</title>
+	<script type="text/javascript" src="javascripts/commonApi.js"></script>
+	<script type="text/javascript" src="javascripts/logoSwing.js"></script>
+	<script type="text/javascript" src="javascripts/briefIntro.js"></script>
+	<script type="text/javascript" src="javascripts/highlightPage.js"></script>
+	<link rel="stylesheet" href="styles/basic.css" type="text/css" media="screen" /> 
+	<link rel="stylesheet" href="styles/tableForm.css" type="text/css" media="screen" /> 
+</head>
+<body id="briefIntro">
+	<div id="header">
+		<img id="title" src="images/logo.jpg" alt="logo" />
+	</div>
+	
+	<div id="navigation">
+		<ul id="tagList">
+			<li> <a href="briefIntroduction.html">Brief Introduction</a> </li>
+			<li> <a href="BaseInfo.html">Base Information</a> </li>
+			<li> <a href="ProjectExp.html">Projects' Experience</a> </li>
+			<li> <a href="Hobbies.html">Hobbies</a> </li>
+			<li> <a href="EducationExp.html">Education Experience</a> </li>
+		</ul>
+	</div>
+
+	<div id="introduction">
+		<h2>Brief Introduction</h2>
+		<p> Hello every one, my name is Fan chen xin, I am come from Fujian.
+		</p>
+
+		<h3>Contact with me<h3>
+		<div id="contact">
+			<form id="contact_form" method="post" action="#">
+				<fieldset>
+					<!-- <p>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" value="Your name please" class="name required" />
+					</p>
+					<p>
+						<label for="email">Email:</label>
+						<input type="text" id="email" name="email" value="Your email address please" class="email required" />
+					</p> -->
+
+					<table width="80%" border="0" align="left">
+						<tr>
+							<td width="40 height="20" align="left">
+								<label for="name">Name:</label>
+							</td>
+							<td width="40 height="20" align="left">
+								<label for="email">Email:</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td width="60" height="20" align="left">
+								<input type="text" id="name" name="name" value="Your name please" class="name required" 
+								size="20" />
+							</td>
+
+							<td width="60" height="20" align="left">
+								<input type="text" id="email" name="email" value="Your email address please" class="email required" size="30" />
+							</td>
+						</tr>
+					</table>
+					<br></br>
+					<br></br>
+					<p>
+						<label for="message">Message:</label>
+						<textarea cols="45" rows="7" id="message" name="message"
+						class="message required">Write your message here.</textarea>
+					</p>
+					<input id="send" type="submit" value="Send" name="submitBut" />
+					<button id="cleanBut" type="button">Clean</button>  <!-- 一定要指定type属性为button不然会调用onsubmit事件 -->
+					<button id="backHomePageBut" type="button">HomePage</button>
+				</fieldset>
+			</form>
+			
+		</div>
+	</div>
+</body>
+</html>

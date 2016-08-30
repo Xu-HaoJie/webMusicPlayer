@@ -1,0 +1,72 @@
+body{
+	background-color: #6fd3ff;
+	color: #fb5;
+}
+
+a:link{
+	color: #445;
+	background-color: #eb6;
+}
+
+a:visited{
+	color: #345;
+	background-color: #eb6;
+}
+
+a:active{
+	color: #778;
+	background-color: #ec8;
+}
+
+#header{
+	color: #ec8;
+	background-color: #6fd3ff;
+	border-color: #667;
+}
+
+#navigation{
+	color: #455;
+	background-color: #789;
+	border-color: #667;
+}
+
+#content, #introduction{
+	color: #223;
+	background-color: #edc;
+	border-color: #667;
+}
+
+#navigation ul{
+	background-color: #9cc;
+}
+
+#navigation a:link, #navigation a:visited{
+	color: #fff;
+	background-color: transparent;
+	border-color: #99a;
+}
+
+#navigation a:hover{
+	color: #445;
+	background-color: #eb6;
+}
+
+#navigation a:active{
+	color: #667;
+	background-color: #ec8;
+}
+
+
+/* 鼠标移动到表格的行上，改变该行的字体颜色和加粗 */
+
+a:hover{  
+	font-weight: bold;
+	color: #c60;
+}
+
+#navigation a.here:link,
+#navigation a.here:visited,
+#navigation a.here:active{
+	color: #fff;
+	background-color: #c60;
+}
